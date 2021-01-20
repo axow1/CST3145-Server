@@ -21,6 +21,7 @@ app.param('collectionName', (req, res, next, collectionName) =>{
 
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*"); // allow CORS
+    res.header("Access-Control-Allow-Headers", "*"); // allow CORS
     next();
   });
 
@@ -80,5 +81,6 @@ app.delete('/collection/:collectionName/:id', (req, res, next) => {
         })
 })
 
-app.listen(3000);
-console.log ('server running on port 3000');
+const port = process.env.PORT || 3000
+app.listen(port);
+console.log ('server running on port' & port);
