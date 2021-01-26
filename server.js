@@ -8,7 +8,7 @@ app.use(express.json());
 //connect to MongoDB
 const MongoClient = require('mongodb').MongoClient;
 let db;
-MongoClient.connect('mongodb+srv://dru011:letme3nter@cluster0.o6iru.mongodb.net/MdxTest?retryWrites=true&w=majority',
+MongoClient.connect('mongodb+srv://User1:AkkJ1029@cluster0.bs18t.mongodb.net/vue_express?retryWrites=true&w=majority',
 (err, client) => {
     db = client.db('webstore')
 });
